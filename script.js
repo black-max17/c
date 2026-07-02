@@ -17,63 +17,183 @@ let posicaoAtual = 0;
 const cartinhas = [
 
     {
-        emoji:"❤️",
-        mensagem:"Você nunca vai enfrentar nada sozinha. Enquanto eu existir, você sempre terá alguém caminhando ao seu lado."
+        emoji: "❤️",
+        mensagem: "Você nunca vai enfrentar nada sozinha. Enquanto eu existir, vou segurar sua mão e caminhar ao seu lado, nos dias bons e principalmente nos difíceis."
     },
 
     {
-        emoji:"💌",
-        mensagem:"Meu lugar favorito sempre será ao seu lado."
+        emoji: "💌",
+        mensagem: "Meu lugar favorito sempre será ao seu lado. Não importa onde estejamos, você sempre será o meu lar."
     },
 
     {
-        emoji:"🌹",
-        mensagem:"Você é muito mais forte do que imagina e muito mais amada do que consegue enxergar."
+        emoji: "🌹",
+        mensagem: "Você é muito mais forte do que imagina e muito mais amada do que consegue enxergar. Nunca duvide do quanto você é especial."
     },
 
     {
-        emoji:"💕",
-        mensagem:"Mesmo nos dias mais difíceis, eu continuo escolhendo você."
+        emoji: "💕",
+        mensagem: "Mesmo nos dias mais difíceis, eu continuo escolhendo você. Escolheria hoje, amanhã e em todas as versões do nosso futuro."
     },
 
     {
-        emoji:"✨",
-        mensagem:"Seu sorriso ainda é o lugar onde meu coração encontra paz."
+        emoji: "✨",
+        mensagem: "Seu sorriso continua sendo o lugar onde meu coração encontra paz."
     },
 
     {
-        emoji:"💖",
-        mensagem:"Você merece todo carinho, todo respeito e todo amor deste mundo."
+        emoji: "💖",
+        mensagem: "Você merece todo carinho, todo respeito, toda felicidade e todo amor que existe neste mundo."
     },
 
     {
-        emoji:"🌸",
-        mensagem:"Obrigado por existir e fazer parte da minha vida."
+        emoji: "🌸",
+        mensagem: "Obrigado por existir. Sua presença faz a minha vida ser muito mais bonita."
     },
 
     {
-        emoji:"🤍",
-        mensagem:"Não importa o dia, a distância ou o momento... eu continuo aqui por você."
+        emoji: "🤍",
+        mensagem: "Não importa o dia, a distância ou o momento... eu continuo aqui por você, sempre."
     },
 
     {
-        emoji:"💝",
-        mensagem:"Se eu pudesse escolher novamente, escolheria você todas as vezes."
+        emoji: "💝",
+        mensagem: "Se eu pudesse escolher novamente, escolheria você em todas as vidas."
     },
 
     {
-        emoji:"🥰",
-        mensagem:"Você é a mulher mais incrível que eu conheço."
+        emoji: "🥰",
+        mensagem: "Você é a mulher mais incrível que eu já conheci, e todos os dias encontro um novo motivo para admirar você."
     },
 
     {
-        emoji:"🌙",
-        mensagem:"Espero que esta cartinha consiga te abraçar mesmo quando eu não puder."
+        emoji: "🌙",
+        mensagem: "Espero que esta cartinha consiga te abraçar quando eu não puder. Feche os olhos e lembre que meu carinho sempre encontra um jeito de chegar até você."
     },
 
     {
-        emoji:"☀️",
-        mensagem:"Você ilumina meus dias muito mais do que imagina."
+        emoji: "☀️",
+        mensagem: "Você ilumina meus dias muito mais do que imagina. Sua existência torna tudo mais leve."
+    },
+
+    {
+        emoji: "🌈",
+        mensagem: "Depois da tempestade sempre existe um céu bonito esperando por você. E eu estarei aqui para admirá-lo ao seu lado."
+    },
+
+    {
+        emoji: "🦋",
+        mensagem: "Nunca deixe que um momento difícil faça você esquecer a pessoa maravilhosa que é."
+    },
+
+    {
+        emoji: "💞",
+        mensagem: "Cada conversa, cada sorriso e cada instante ao seu lado se transforma em uma das minhas melhores lembranças."
+    },
+
+    {
+        emoji: "🍀",
+        mensagem: "Ter você na minha vida é a maior sorte que eu poderia pedir."
+    },
+
+    {
+        emoji: "🌻",
+        mensagem: "Espero que hoje você encontre pelo menos um motivo para sorrir. Se não encontrar, eu tento ser esse motivo."
+    },
+
+    {
+        emoji: "🫶",
+        mensagem: "Você não precisa ser perfeita para ser incrível. Do jeitinho que você é, já conquista meu coração todos os dias."
+    },
+
+    {
+        emoji: "💫",
+        mensagem: "Nunca se esqueça: você é capaz de conquistar coisas muito maiores do que imagina."
+    },
+
+    {
+        emoji: "🎀",
+        mensagem: "Você transforma momentos simples em lembranças inesquecíveis."
+    },
+
+    {
+        emoji: "🌺",
+        mensagem: "Seu jeito de cuidar das pessoas faz o mundo ficar um pouco mais bonito."
+    },
+
+    {
+        emoji: "🩷",
+        mensagem: "Mesmo quando você acha que está sem forças, eu consigo enxergar a coragem que existe dentro de você."
+    },
+
+    {
+        emoji: "📖",
+        mensagem: "Minha história favorita é aquela em que você faz parte de todos os capítulos."
+    },
+
+    {
+        emoji: "🎵",
+        mensagem: "Você é a melodia mais bonita que já entrou na minha vida."
+    },
+
+    {
+        emoji: "💐",
+        mensagem: "Espero que você nunca esqueça o quanto é importante para mim."
+    },
+
+    {
+        emoji: "🌌",
+        mensagem: "Se cada estrela representasse um motivo para amar você, o céu ainda seria pequeno."
+    },
+
+    {
+        emoji: "🕊️",
+        mensagem: "Que o seu coração encontre paz hoje. E se precisar, deixa que eu divido o peso com você."
+    },
+
+    {
+        emoji: "🎁",
+        mensagem: "Você é o presente mais bonito que a vida colocou no meu caminho."
+    },
+
+    {
+        emoji: "🍃",
+        mensagem: "Respire fundo. Você já superou dias muito difíceis e também vai superar este."
+    },
+
+    {
+        emoji: "🏡",
+        mensagem: "Onde quer que a vida nos leve, meu coração sempre vai procurar o caminho de volta até você."
+    },
+
+    {
+        emoji: "💘",
+        mensagem: "Amar você nunca foi um esforço. Sempre foi a parte mais fácil e bonita dos meus dias."
+    },
+
+    {
+        emoji: "🫂",
+        mensagem: "Se hoje estiver pesado demais, imagina que este bilhetinho é um abraço apertado dizendo que tudo vai ficar bem."
+    },
+
+    {
+        emoji: "🌠",
+        mensagem: "Você é um daqueles acontecimentos raros que mudam a vida de alguém para melhor."
+    },
+
+    {
+        emoji: "🪻",
+        mensagem: "Nunca duvide do espaço enorme que você ocupa no meu coração."
+    },
+
+    {
+        emoji: "💎",
+        mensagem: "Você é preciosa, única e insubstituível. Nunca deixe ninguém fazer você acreditar no contrário."
+    },
+
+    {
+        emoji: "🥹",
+        mensagem: "Se algum dia você esquecer o quanto é amada, releia esta cartinha e lembre que existe alguém torcendo por você todos os dias."
     }
 
 ];
