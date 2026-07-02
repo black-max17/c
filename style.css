@@ -1,0 +1,1077 @@
+/* ============================
+   GOOGLE FONT
+============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+
+
+/* ============================
+   RESET
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 20px;
+
+    overflow-x:hidden;
+
+    background:
+        radial-gradient(circle at top,#35264f 0%,#1a1630 45%,#0d0b18 100%);
+
+    color:white;
+
+    position:relative;
+
+}
+
+
+/* ============================
+   ESTRELAS
+============================ */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-3;
+
+    overflow:hidden;
+
+}
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
+
+    background-size:70px 70px,120px 120px;
+
+    background-position:0 0,40px 50px;
+
+    opacity:.35;
+
+    animation:starsMove 60s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(70px);
+    }
+
+}
+
+/* Luzes ao fundo */
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    border-radius:50%;
+
+    background:#ff5fa2;
+
+    filter:blur(160px);
+
+    opacity:.18;
+
+    top:-150px;
+    left:-120px;
+
+}
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    border-radius:50%;
+
+    background:#8d7dff;
+
+    filter:blur(160px);
+
+    opacity:.15;
+
+    bottom:-150px;
+    right:-120px;
+
+}
+
+
+/* ============================
+   CONTAINER
+============================ */
+
+.container{
+
+    width:100%;
+    max-width:900px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+/* ============================
+   HEADER
+============================ */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.header h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:3.2rem;
+
+    color:#ffd7ea;
+
+    margin-bottom:15px;
+
+    text-shadow:0 0 20px rgba(255,120,180,.4);
+
+}
+
+.subtitle{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#f1e9ff;
+
+    opacity:.9;
+
+}
+
+
+/* ============================
+   PERFIL
+============================ */
+
+.profile{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.photo{
+
+    width:190px;
+
+    height:190px;
+
+    border-radius:50%;
+
+    padding:6px;
+
+    background:linear-gradient(
+        135deg,
+        #ff7db6,
+        #ffb6d6,
+        #ffffff
+    );
+
+    margin-bottom:25px;
+
+    animation:pulse 3s infinite;
+
+    box-shadow:
+        0 0 40px rgba(255,120,180,.35);
+
+}
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #201c37;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.04);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.profile h2{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:#ffffff;
+
+}
+
+.profile p{
+
+    max-width:650px;
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+    color:#ece8ff;
+
+    opacity:.9;
+
+}
+
+/* ============================
+   MÁQUINA DAS CARTINHAS
+============================ */
+
+.machine{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:760px;
+
+    margin:0 auto 40px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:25px 0;
+
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,.03),
+        0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+/* Gradientes nas laterais */
+
+.fade{
+
+    position:absolute;
+
+    top:0;
+
+    width:120px;
+
+    height:100%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.fade.left{
+
+    left:0;
+
+    background:linear-gradient(
+        to right,
+        #1a1630,
+        transparent
+    );
+
+}
+
+.fade.right{
+
+    right:0;
+
+    background:linear-gradient(
+        to left,
+        #1a1630,
+        transparent
+    );
+
+}
+
+
+/* Linha vermelha indicando a carta sorteada */
+
+.selector{
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:5px;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:#ff4f93;
+
+    box-shadow:
+        0 0 20px #ff4f93,
+        0 0 40px #ff4f93;
+
+    z-index:20;
+
+}
+
+
+/* ============================
+   ESTEIRA DAS CARTAS
+============================ */
+
+.cards-track{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    width:max-content;
+
+    padding:10px 30px;
+
+}
+
+
+/* ============================
+   CARTINHAS
+============================ */
+
+.card{
+
+    width:140px;
+
+    height:180px;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:48px;
+
+    cursor:default;
+
+    color:white;
+
+    user-select:none;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ff74a7,
+            #ff4f93
+        );
+
+    border:2px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.25);
+
+    transition:
+        transform .35s,
+        box-shadow .35s;
+
+}
+
+
+/* Hover apenas para PC */
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(255,95,160,.35);
+
+}
+
+
+/* Carta vencedora */
+
+.card.active{
+
+    transform:scale(1.12);
+
+    border-color:white;
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,.6),
+        0 0 60px rgba(255,120,180,.5);
+
+}
+
+
+/* ============================
+   BOTÃO
+============================ */
+
+button{
+
+    display:block;
+
+    margin:0 auto;
+
+    width:100%;
+
+    max-width:320px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff5a9d,
+            #ff88bb
+        );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+        0 10px 30px rgba(255,90,157,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(255,90,157,.45);
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* ============================
+   CARTA REVELADA
+============================ */
+
+.result{
+
+    margin-top:45px;
+
+}
+
+.love-card{
+
+    max-width:650px;
+
+    margin:auto;
+
+    background:white;
+
+    color:#333;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.25);
+
+    animation:fadeUp .8s;
+
+}
+
+.card-heart{
+
+    font-size:55px;
+
+    margin-bottom:15px;
+
+}
+
+.love-card h2{
+
+    color:#ff4f93;
+
+    margin-bottom:20px;
+
+}
+
+#mensagem{
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    min-height:120px;
+
+    color:#444;
+
+}
+
+.signature{
+
+    margin-top:30px;
+
+}
+
+.signature span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#777;
+
+}
+
+.signature strong{
+
+    color:#ff4f93;
+
+    font-size:18px;
+
+}
+
+
+/* ============================
+   ANIMAÇÃO
+============================ */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer{
+
+    margin-top:50px;
+
+    text-align:center;
+
+}
+
+footer p{
+
+    color:rgba(255,255,255,.8);
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================
+   CORAÇÕES FLUTUANTES
+========================================== */
+
+.floating-heart{
+
+    position:fixed;
+
+    font-size:24px;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:9999;
+
+    animation:heartFloat 3.5s linear forwards;
+
+}
+
+@keyframes heartFloat{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateY(0)
+            scale(.6);
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-220px)
+            rotate(25deg)
+            scale(1.6);
+
+    }
+
+}
+
+
+/* ==========================================
+   BRILHO DA CARTA VENCEDORA
+========================================== */
+
+.card.active{
+
+    animation:winner .8s ease;
+
+}
+
+@keyframes winner{
+
+    0%{
+
+        transform:scale(.9);
+
+    }
+
+    50%{
+
+        transform:scale(1.18);
+
+    }
+
+    100%{
+
+        transform:scale(1.12);
+
+    }
+
+}
+
+
+/* ==========================================
+   SCROLL PERSONALIZADO
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#151228;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff6ba7;
+
+    border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff4f93;
+
+}
+
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:900px){
+
+    .container{
+
+        padding:35px;
+
+    }
+
+    .header h1{
+
+        font-size:2.6rem;
+
+    }
+
+    .profile h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .card{
+
+        width:120px;
+
+        height:160px;
+
+        font-size:42px;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px 12px;
+
+    }
+
+    .container{
+
+        padding:25px 18px;
+
+        border-radius:22px;
+
+    }
+
+    .header{
+
+        margin-bottom:35px;
+
+    }
+
+    .header h1{
+
+        font-size:2rem;
+
+        line-height:1.2;
+
+    }
+
+    .subtitle{
+
+        font-size:.95rem;
+
+    }
+
+    .photo{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+    .profile{
+
+        margin-bottom:40px;
+
+    }
+
+    .profile h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .profile p{
+
+        font-size:.95rem;
+
+    }
+
+    .machine{
+
+        padding:18px 0;
+
+    }
+
+    .fade{
+
+        width:50px;
+
+    }
+
+    .cards-track{
+
+        gap:15px;
+
+        padding:10px 20px;
+
+    }
+
+    button{
+
+        font-size:16px;
+
+        padding:15px;
+
+    }
+
+    .love-card{
+
+        padding:25px;
+
+    }
+
+    .love-card h2{
+
+        font-size:1.3rem;
+
+    }
+
+    #mensagem{
+
+        font-size:1rem;
+
+        min-height:auto;
+
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUENOS
+========================================== */
+
+@media (max-width:420px){
+
+    .header h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .photo{
+
+        width:115px;
+
+        height:115px;
+
+    }
+
+    .profile h2{
+
+        font-size:1.3rem;
+
+    }
+
+
+    button{
+
+        width:100%;
+
+    }
+
+    .love-card{
+
+        padding:20px;
+
+    }
+
+    .card-heart{
+
+        font-size:42px;
+
+    }
+
+}
+
+.card .emoji{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.card span{
+
+    font-size:12px;
+
+    line-height:1.4;
+
+    text-align:center;
+
+    padding:0 8px;
+
+    color:white;
+
+    font-weight:500;
+
+}
+
+.card{
+
+    width:140px;
+    height:180px;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    background:linear-gradient(145deg,#ff74a7,#ff4f93);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:15px;
+
+    border:2px solid rgba(255,255,255,.15);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
